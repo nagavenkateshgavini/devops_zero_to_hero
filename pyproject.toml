@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "devops-zero-to-hero"
+version = "0.1.0"
+description = ""
+authors = ["Naga Venkatesh Gavini <nagavenkat9948@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+awscli = "^1.34.24"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
