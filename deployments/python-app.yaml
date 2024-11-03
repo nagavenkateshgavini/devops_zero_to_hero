@@ -16,7 +16,13 @@ spec:
     spec:
       containers:
       - name: flask-app
-        image: ngaviniv/flask-app:v1
+        image: ngaviniv/flask-app:v3
+        volumeMounts:
+          - name: db-connection
+            mountPath: /opt
         ports:
         - containerPort: 5000
-
+        volumes:
+          - name: db-connection
+            configMap:
+              name: test-cm
